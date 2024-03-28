@@ -12,3 +12,34 @@ function desencriptar(texto) {
     // Desencriptar el texto al detectar "enter" y cambiarlo por e, cambiar "imes" por i, cambiar "ai" por a, cambiar "ober" por o y cambiar "ufat" por u
     return texto.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
 }
+
+function clickEncriptar() {
+    event.preventDefault();
+    let texto = document.getElementById('texto').value;
+    try {
+        let textoEncriptado = encriptar(texto);
+        // Agregar un parrafo con el texto encriptado al div con clase "resultado"
+        let resultado = document.querySelector('.resultado');
+        resultado.innerHTML = '';
+        let parrafo = document.createElement('p');
+        parrafo.textContent = textoEncriptado;
+        resultado.appendChild(parrafo);
+    } catch (error) {
+        console.error('Error:', error.message);
+    }
+}
+
+function clickDesencriptar() {
+    event.preventDefault();
+    let texto = document.getElementById('texto').value;
+    let textoDesencriptado = desencriptar(texto);
+    // Agregar un parrafo con el texto desencriptado al div con clase "resultado"
+    let resultado = document.querySelector('.resultado');
+    resultado.innerHTML = '';
+    let parrafo = document.createElement('p');
+    parrafo.textContent = textoDesencriptado;
+    resultado.appendChild(parrafo);
+}
+
+document.getElementById('encriptar').addEventListener('click', clickEncriptar);
+document.getElementById('desencriptar').addEventListener('click', clickDesencriptar);

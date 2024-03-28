@@ -7,3 +7,8 @@ function encriptar(texto) {
         return texto.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
     }
 }
+
+function desencriptar(texto) {
+    // Desencriptar el texto al detectar "enter" y cambiarlo por e, cambiar "imes" por i, cambiar "ai" por a, cambiar "ober" por o y cambiar "ufat" por u
+    return texto.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
+}

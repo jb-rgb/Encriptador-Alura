@@ -74,7 +74,7 @@ button {
 }
 
 .desencriptar {
-	background-color: #D8DFE8;
+	background-color: #F3F5FC;
 	color: black;
 	width: 328px;
 	height: 67px;
@@ -83,7 +83,7 @@ button {
 	border: 1px solid #0A3871;
 }
 
-.contenedor-inicial .resultado {
+.contenedor-inicial .apartado-inical {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -100,10 +100,11 @@ button {
 }
 
 .contenedor-inicial .contenedor-resultado {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	justify-content: flex-start;
+	justify-content: space-between;
 	width: 350px;
 	height: 650px;
 	text-align: left;
@@ -115,13 +116,23 @@ button {
 	margin-bottom: 0;
 }
 
-.contenedor-inicial .resultado .p-bold {
+.contenedor-inicial .contenedor-resultado .copiar {
+	background-color: #FFFFFF;
+	color: #0A3871;
+	border: 1px solid #0A3871;
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+.contenedor-inicial .apartado-inical .p-bold {
 	font-weight: bold;
 	font-size: 24px;
 	text-align: center;
 }
 
-.contenedor-inicial .resultado p {
+.contenedor-inicial .apartado-inical p {
 	font-size: 16px;
 	text-align: center;
 }
@@ -132,7 +143,7 @@ button {
 	color: #495057;
 }
 
-.resultado img {
+.apartado-inical img {
 	width: 100%;
 	margin-bottom: 20px;
 }

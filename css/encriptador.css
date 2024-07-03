@@ -1,7 +1,138 @@
 body {
-    background-color: #D8DFE8;
+	display: flex;
+	background-color: #F3F5FC;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	display: flex;
+	margin: 40px 0;
+	width: 40px;
+	height: 40px;
 }
 
 .principal {
-    display: flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: calc(100vh - 80px);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	height: 575px;
+	padding: 20px;
+	background-color: #F3F5FC;
+	border-radius: 5px;
+	margin-top: 150px;
+}
+
+textarea {
+	margin: 20px 0;
+	width: 90%;
+	height: 600px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #F3F5FC;
+	color: #0A3871;
+	font-size: 32px;
+	resize: none;
+}
+
+textarea::placeholder {
+	color: #0A3971;
+	font-size: 32px;
+	font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+button {
+	width: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.encriptar {
+	background-color: #0A3871;
+	color: white;
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+}
+
+.desencriptar {
+	background-color: #D8DFE8;
+	color: black;
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+	color: #0A3871;
+	border: 1px solid #0A3871;
+}
+
+.contenedor-inicial .resultado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 650px;
+	text-align: center;
+	padding: 20px;
+	background-color: #FFFFFF;
+	border-radius: 32px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 75px 50px 50px 0;
+	margin-bottom: 0;
+}
+
+.contenedor-inicial .contenedor-resultado {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 350px;
+	height: 650px;
+	text-align: left;
+	padding: 20px;
+	background-color: #FFFFFF;
+	border-radius: 32px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 75px 50px 50px 0;
+	margin-bottom: 0;
+}
+
+.contenedor-inicial .resultado .p-bold {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+}
+
+.contenedor-inicial .resultado p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.contenedor-inicial .contenedor-resultado .p-resultado {
+	font-size: 24px;
+	text-align: left;
+	color: #495057;
+}
+
+.resultado img {
+	width: 100%;
+	margin-bottom: 20px;
 }

@@ -7,22 +7,27 @@
     <title>Encriptador Alura</title>
 </head>
 <body>
-    <img src="imagenes/Logo.png" alt="Logo Alura">
+    <div class="logo">
+        <img src="imagenes/Logo.png" alt="Logo Alura">
+    </div>
     <div class="principal">
         <form>
-            <label for="texto">Texto a encriptar:</label>
-            <textarea name="texto" id="texto" cols="100" rows="40"></textarea>
-            <p>
-                <img src="imagenes/informacion.png" alt="informacion">
-                Solo letras minúsculas y sin acentos.
-            </p>
-            <button type="submit" id="encriptar" class="encriptar">Encriptar</button>
-            <button type="submit" id="desencriptar" class="desencriptar">Desencriptar</button>
+            <textarea name="texto" id="texto" cols="100" rows="40" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="buttons">
+                <p>
+                    <img src="imagenes/informacion.png" alt="informacion">
+                    Solo letras minúsculas y sin acentos.
+                </p>
+                <button type="submit" id="encriptar" class="encriptar">Encriptar</button>
+                <button type="submit" id="desencriptar" class="desencriptar">Desencriptar</button>
+            </div>
         </form>
-        <div class="resultado">
-            <img class="imagen_muneico" src="imagenes/Muñeco.png" alt="Muñeco Alura">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        <div class="contenedor-inicial">
+            <div class="resultado">
+                <img class="imagen_muneico" src="imagenes/Muñeco.png" alt="Muñeco Alura">
+                <p class="p-bold">Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
         </div>
     </div>
     <script src="js/encriptador.js"></script>

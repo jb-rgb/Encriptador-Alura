@@ -18,6 +18,8 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	height: calc(100vh - 80px);
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 form {
@@ -146,4 +148,136 @@ button {
 .apartado-inical img {
 	width: 100%;
 	margin-bottom: 20px;
+}
+
+/* Para tabletas */
+@media (max-width: 768px) {
+	.principal {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 20px;
+	}
+
+	.contenedor-inicial .apartado-inical,
+	.contenedor-inicial .contenedor-resultado {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 50px;
+	}
+
+	.contenedor-inicial .apartado-inical .p-bold {
+		font-size: 24px;
+	}
+
+	.contenedor-inicial .apartado-inical p {
+		font-size: 16px;
+	}
+
+	.contenedor-inicial .contenedor-resultado .p-resultado {
+		font-size: 24px;
+	}
+
+	textarea {
+		height: 450px;
+		font-size: 32px;
+	}
+
+	button {
+		width: 332px;
+		height: 67px;
+		font-size: 16px;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.encriptar {
+		width: 332px;
+		height: 67px;
+	}
+
+	.desencriptar {
+		width: 332px;
+		height: 67px;
+	}
+
+	.contenedor-inicial .contenedor-resultado .copiar {
+		width: 624px;
+		height: 67px;
+	}
+
+	.contenedor-inicial .apartado-inical {
+		width: 688px;
+		height: 133px;
+	}
+
+	.contenedor-inicial .apartado-inical img {
+		display: none;
+	}
+}
+
+/* Para móviles */
+@media (max-width: 425px) {
+	.principal {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 15px;
+	}
+
+	textarea {
+		height: 300px;
+		font-size: 32px;
+	}
+
+	.contenedor-inicial .apartado-inical .p-bold {
+		font-size: 24px;
+	}
+
+	.contenedor-inicial .apartado-inical p {
+		font-size: 16px;
+	}
+
+	.contenedor-inicial .contenedor-resultado .p-resultado {
+		font-size: 24px;
+	}
+
+	button {
+		width: 332px;
+		height: 67px;
+		font-size: 16px;
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.encriptar {
+		width: 343px;
+		height: 67px;
+	}
+
+	.desencriptar {
+		width: 343px;
+		height: 67px;
+	}
+
+	.contenedor-inicial .contenedor-resultado .copiar {
+		width: 279px;
+		height: 67px;
+	}
+
+	.contenedor-inicial .apartado-inical {
+		width: 327px;
+		height: 166px;
+	}
+
+	.contenedor-inicial .apartado-inical img {
+		display: none;
+	}
 }
